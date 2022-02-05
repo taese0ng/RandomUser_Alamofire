@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D6B743127AEC81C002251E4 /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B743027AEC81C002251E4 /* RandomUserViewModel.swift */; };
 		0DAC0B2827AEBF370085C4AF /* RandomUserListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B2727AEBF370085C4AF /* RandomUserListApp.swift */; };
 		0DAC0B2A27AEBF370085C4AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B2927AEBF370085C4AF /* ContentView.swift */; };
 		0DAC0B2C27AEBF380085C4AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC0B2B27AEBF380085C4AF /* Assets.xcassets */; };
@@ -14,6 +15,11 @@
 		0DAC0B3927AEBF380085C4AF /* RandomUserListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B3827AEBF380085C4AF /* RandomUserListTests.swift */; };
 		0DAC0B4327AEBF380085C4AF /* RandomUserListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B4227AEBF380085C4AF /* RandomUserListUITests.swift */; };
 		0DAC0B4527AEBF380085C4AF /* RandomUserListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B4427AEBF380085C4AF /* RandomUserListUITestsLaunchTests.swift */; };
+		0DAC0B5427AEBF950085C4AF /* ProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B5327AEBF950085C4AF /* ProfileImgView.swift */; };
+		0DAC0B5727AEC0930085C4AF /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0DAC0B5627AEC0930085C4AF /* URLImage */; };
+		0DAC0B5927AEC2C80085C4AF /* RandomUserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B5827AEC2C80085C4AF /* RandomUserRowView.swift */; };
+		0DAC0B5C27AEC4D20085C4AF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0DAC0B5B27AEC4D20085C4AF /* Alamofire */; };
+		0DAC0B6027AEC5410085C4AF /* RandomUser+ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B5F27AEC5410085C4AF /* RandomUser+ResponseData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D6B743027AEC81C002251E4 /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
 		0DAC0B2427AEBF370085C4AF /* RandomUserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAC0B2727AEBF370085C4AF /* RandomUserListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListApp.swift; sourceTree = "<group>"; };
 		0DAC0B2927AEBF370085C4AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,9 @@
 		0DAC0B3E27AEBF380085C4AF /* RandomUserListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAC0B4227AEBF380085C4AF /* RandomUserListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListUITests.swift; sourceTree = "<group>"; };
 		0DAC0B4427AEBF380085C4AF /* RandomUserListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0DAC0B5327AEBF950085C4AF /* ProfileImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgView.swift; sourceTree = "<group>"; };
+		0DAC0B5827AEC2C80085C4AF /* RandomUserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRowView.swift; sourceTree = "<group>"; };
+		0DAC0B5F27AEC5410085C4AF /* RandomUser+ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUser+ResponseData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAC0B5727AEC0930085C4AF /* URLImage in Frameworks */,
+				0DAC0B5C27AEC4D20085C4AF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +106,8 @@
 		0DAC0B2627AEBF370085C4AF /* RandomUserList */ = {
 			isa = PBXGroup;
 			children = (
+				0DAC0B5227AEBF570085C4AF /* Data */,
+				0DAC0B5127AEBF520085C4AF /* UI */,
 				0DAC0B2727AEBF370085C4AF /* RandomUserListApp.swift */,
 				0DAC0B2927AEBF370085C4AF /* ContentView.swift */,
 				0DAC0B2B27AEBF380085C4AF /* Assets.xcassets */,
@@ -127,6 +141,24 @@
 			path = RandomUserListUITests;
 			sourceTree = "<group>";
 		};
+		0DAC0B5127AEBF520085C4AF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC0B5327AEBF950085C4AF /* ProfileImgView.swift */,
+				0DAC0B5827AEC2C80085C4AF /* RandomUserRowView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0DAC0B5227AEBF570085C4AF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC0B5F27AEC5410085C4AF /* RandomUser+ResponseData.swift */,
+				0D6B743027AEC81C002251E4 /* RandomUserViewModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +175,10 @@
 			dependencies = (
 			);
 			name = RandomUserList;
+			packageProductDependencies = (
+				0DAC0B5627AEC0930085C4AF /* URLImage */,
+				0DAC0B5B27AEC4D20085C4AF /* Alamofire */,
+			);
 			productName = RandomUserList;
 			productReference = 0DAC0B2427AEBF370085C4AF /* RandomUserList.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +251,10 @@
 				Base,
 			);
 			mainGroup = 0DAC0B1B27AEBF370085C4AF;
+			packageReferences = (
+				0DAC0B5527AEC0930085C4AF /* XCRemoteSwiftPackageReference "url-image" */,
+				0DAC0B5A27AEC4D20085C4AF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0DAC0B2527AEBF370085C4AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAC0B2A27AEBF370085C4AF /* ContentView.swift in Sources */,
+				0DAC0B5927AEC2C80085C4AF /* RandomUserRowView.swift in Sources */,
+				0DAC0B6027AEC5410085C4AF /* RandomUser+ResponseData.swift in Sources */,
+				0DAC0B5427AEBF950085C4AF /* ProfileImgView.swift in Sources */,
+				0D6B743127AEC81C002251E4 /* RandomUserViewModel.swift in Sources */,
 				0DAC0B2827AEBF370085C4AF /* RandomUserListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +629,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DAC0B5527AEC0930085C4AF /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		0DAC0B5A27AEC4D20085C4AF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DAC0B5627AEC0930085C4AF /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DAC0B5527AEC0930085C4AF /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		0DAC0B5B27AEC4D20085C4AF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DAC0B5A27AEC4D20085C4AF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0DAC0B1C27AEBF370085C4AF /* Project object */;
 }

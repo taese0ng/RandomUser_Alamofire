@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var randomUserViewModel = RandomUserViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(randomUserViewModel.randomUsers){
+            randomUser in
+            RandomUserRowView(randomUser: randomUser)
+        }
     }
 }
 
