@@ -12,7 +12,7 @@ import Alamofire
 class RandomUserViewModel: ObservableObject {
     
     // MARK: Properties
-    var subscription = Set<AnyCancellable>()
+    var subscription = Set<AnyCancellable>() // 메모리해제를 해주는 기능을 담당.
     
     @Published var randomUsers = [RandomUser]()
     

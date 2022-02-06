@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D6B743127AEC81C002251E4 /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B743027AEC81C002251E4 /* RandomUserViewModel.swift */; };
+		0D8086E527AFD23000EABDB5 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8086E427AFD23000EABDB5 /* UserDetailView.swift */; };
 		0DAC0B2827AEBF370085C4AF /* RandomUserListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B2727AEBF370085C4AF /* RandomUserListApp.swift */; };
 		0DAC0B2A27AEBF370085C4AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC0B2927AEBF370085C4AF /* ContentView.swift */; };
 		0DAC0B2C27AEBF380085C4AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC0B2B27AEBF380085C4AF /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0D6B743027AEC81C002251E4 /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
+		0D8086E427AFD23000EABDB5 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		0DAC0B2427AEBF370085C4AF /* RandomUserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAC0B2727AEBF370085C4AF /* RandomUserListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListApp.swift; sourceTree = "<group>"; };
 		0DAC0B2927AEBF370085C4AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				0DAC0B5327AEBF950085C4AF /* ProfileImgView.swift */,
 				0DAC0B5827AEC2C80085C4AF /* RandomUserRowView.swift */,
+				0D8086E427AFD23000EABDB5 /* UserDetailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				0DAC0B5927AEC2C80085C4AF /* RandomUserRowView.swift in Sources */,
 				0DAC0B6027AEC5410085C4AF /* RandomUser+ResponseData.swift in Sources */,
 				0DAC0B5427AEBF950085C4AF /* ProfileImgView.swift in Sources */,
+				0D8086E527AFD23000EABDB5 /* UserDetailView.swift in Sources */,
 				0D6B743127AEC81C002251E4 /* RandomUserViewModel.swift in Sources */,
 				0DAC0B2827AEBF370085C4AF /* RandomUserListApp.swift in Sources */,
 			);

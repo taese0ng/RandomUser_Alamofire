@@ -12,9 +12,24 @@ struct ContentView: View {
     @ObservedObject var randomUserViewModel = RandomUserViewModel()
     
     var body: some View {
-        List(randomUserViewModel.randomUsers){
-            randomUser in
-            RandomUserRowView(randomUser: randomUser)
+        NavigationView{
+            ZStack(alignment:.bottomTrailing){
+                VStack(alignment: .center, spacing: 0) {
+                    Text("RandomUser List")
+                        .foregroundColor(Color.black)
+                        .fontWeight(.bold)
+                        .font(.system(size:20))
+                    
+                    List(randomUserViewModel.randomUsers){
+                        randomUser in
+                        NavigationLink(
+                            destination: UserDetailView(user: randomUser)
+                        ) {
+                            RandomUserRowView(randomUser: randomUser)
+                        }
+                    }.listStyle(PlainListStyle())
+                }
+            }.navigationBarHidden(true)
         }
     }
 }

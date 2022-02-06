@@ -52,9 +52,9 @@ struct Photo: Codable {
     var thumbnail: String
     static func getDummy() -> Self {
         print(#fileID, #function, #line, "")
-        return Photo(large: "https://randomuser.me/api/portaits/women/93.jpg",
-                     medium: "https://randomuser.me/api/portaits/women/93.jpg",
-                     thumbnail: "https://randomuser.me/api/portaits/women/93.jpg")
+        return Photo(large: "https://randomuser.me/api/portraits/women/21.jpg",
+                     medium: "https://randomuser.me/api/portraits/women/21.jpg",
+                     thumbnail: "https://randomuser.me/api/portraits/women/21.jpg")
     }
 }
 

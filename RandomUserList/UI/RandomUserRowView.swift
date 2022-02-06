@@ -21,10 +21,12 @@ struct RandomUserRowView : View {
                 imageUrl: randomUser.profileImgUrl)
             
             Text("\(randomUser.description)")
-                .fontWeight(.heavy)
-                .font(.system(size:25))
+                .fontWeight(.bold)
+                .font(.system(size:23))
                 .lineLimit(2)
                 .minimumScaleFactor(0.5)
+                .padding(.leading)
+            
         }.frame(minWidth:0, maxWidth: .infinity,
                 minHeight: 0, maxHeight: 50,
                 alignment: .leading)
